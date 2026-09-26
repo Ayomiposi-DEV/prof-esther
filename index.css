@@ -4,9 +4,9 @@
 :root {
 	/* Bootstrap Override Tokens */
 	--bs-primary: #feb548;
-	--bs-primary-rgb: 77, 25, 121;
+	--bs-primary-rgb: 254, 181, 72;
 	--bs-secondary: #f8ddb5;
-	--bs-secondary-rgb: 139, 92, 246;
+	--bs-secondary-rgb: 248, 221, 181;
 	--bs-warning: #f59e0b;
 	--bs-warning-rgb: 245, 158, 11;
 	--bs-danger: #e11d48;
@@ -218,7 +218,7 @@ h3,
 
 .hero-role {
 	font-size: clamp(1.15rem, 2vw, 1.4rem);
-	color: #d8b4fe;
+	color: #fde6b0;
 	font-weight: 500;
 	letter-spacing: 0.2px;
 }
@@ -274,8 +274,8 @@ h3,
 .hero-image-card:hover {
 	transform: translateY(-4px);
 	box-shadow:
-		0 30px 60px -12px rgba(36, 6, 56, 0.75),
-		0 0 25px rgba(139, 92, 246, 0.35);
+		0 30px 60px -12px rgba(56, 28, 6, 0.75),
+		0 0 25px rgba(254, 181, 72, 0.35);
 }
 
 .hero-img {
@@ -372,8 +372,8 @@ h3,
 /* Legacy .hero support */
 .hero {
 	background:
-		radial-gradient(circle at 85% 20%, rgba(139, 92, 246, 0.25) 0%, transparent 45%),
-		linear-gradient(135deg, #240638 0%, #4d1979 55%, #340d54 100%);
+		radial-gradient(circle at 85% 20%, rgba(254, 181, 72, 0.25) 0%, transparent 45%),
+		linear-gradient(135deg, #cc7a00 0%, #feb548 55%, #cc7a00 100%);
 	color: var(--white);
 	padding: 90px 20px;
 	animation: fadeIn 0.8s ease;
@@ -431,9 +431,9 @@ h3,
 }
 
 .btn-primary:hover {
-	background: linear-gradient(135deg, #9d72f8 0%, #380f5c 100%) !important;
+	background: linear-gradient(135deg, var(--primary-light) 0%, var(--primary-dark) 100%) !important;
 	transform: translateY(-2px);
-	box-shadow: 0 10px 25px rgba(77, 25, 121, 0.5) !important;
+	box-shadow: 0 10px 25px rgba(254, 181, 72, 0.5) !important;
 	color: var(--white) !important;
 }
 
@@ -560,7 +560,7 @@ section {
 
 .stat-box:hover {
 	transform: scale(1.05);
-	box-shadow: 0 15px 35px rgba(77, 25, 121, 0.35);
+	box-shadow: 0 15px 35px rgba(235, 142, 4, 0.35);
 }
 
 .stat-number {
@@ -579,9 +579,9 @@ section {
 /* ===== PAGE HEADER ===== */
 .page-header {
 	background:
-		radial-gradient(circle at 85% 20%, rgba(139, 92, 246, 0.28) 0%, transparent 45%),
-		radial-gradient(circle at 15% 85%, rgba(245, 158, 11, 0.15) 0%, transparent 40%),
-		linear-gradient(135deg, #240638 0%, #4d1979 55%, #340d54 100%);
+		radial-gradient(circle at 85% 20%, rgba(254, 181, 72, 0.28) 0%, transparent 45%),
+		radial-gradient(circle at 15% 85%, rgba(235, 142, 4, 0.15) 0%, transparent 40%),
+		linear-gradient(135deg, #cc7a00 0%, #feb548 55%, #cc7a00 100%);
 	color: var(--white);
 	padding: 75px 20px 65px;
 	text-align: center;
@@ -610,7 +610,7 @@ section {
 .page-header .breadcrumb-text,
 .breadcrumb {
 	font-size: 1.1rem;
-	color: #d8b4fe;
+	color: #fde6b0;
 	font-weight: 400;
 	max-width: 700px;
 	margin: 0 auto;
@@ -636,8 +636,8 @@ section {
 	border-radius: 16px;
 	text-align: left;
 	transition: var(--transition);
-	border: 1px solid rgba(77, 25, 121, 0.08);
-	box-shadow: 0 4px 15px rgba(77, 25, 121, 0.04);
+	border: 1px solid rgba(254, 181, 72, 0.15);
+	box-shadow: 0 4px 15px rgba(254, 181, 72, 0.06);
 	position: relative;
 	overflow: hidden;
 }
@@ -657,8 +657,8 @@ section {
 .research-item:hover,
 .research-card:hover {
 	transform: translateY(-6px);
-	box-shadow: 0 15px 35px rgba(77, 25, 121, 0.12);
-	border-color: rgba(139, 92, 246, 0.3);
+	box-shadow: 0 15px 35px rgba(254, 181, 72, 0.18);
+	border-color: rgba(235, 142, 4, 0.35);
 }
 
 .research-item:hover::before,
@@ -704,11 +704,11 @@ section {
 
 /* Book Project Showcase Feature Box */
 .book-feature-box {
-	background: linear-gradient(135deg, #2a0845 0%, #4d1979 60%, #3b125c 100%);
+	background: linear-gradient(135deg, #7a3c00 0%, #cc7a00 60%, #eb8e04 100%);
 	color: var(--white);
 	border-radius: 20px;
 	border: 1px solid rgba(255, 255, 255, 0.18);
-	box-shadow: 0 20px 45px -10px rgba(42, 8, 69, 0.4);
+	box-shadow: 0 20px 45px -10px rgba(100, 50, 0, 0.4);
 	position: relative;
 	overflow: hidden;
 }
@@ -737,16 +737,16 @@ section {
 	border-radius: 16px;
 	transition: var(--transition);
 	align-items: flex-start;
-	border: 1px solid rgba(77, 25, 121, 0.08);
-	box-shadow: 0 4px 15px rgba(77, 25, 121, 0.04);
+	border: 1px solid rgba(254, 181, 72, 0.15);
+	box-shadow: 0 4px 15px rgba(254, 181, 72, 0.06);
 }
 
 .publication-item:hover,
 .pub-item-card:hover {
 	background: var(--white);
-	box-shadow: 0 12px 30px rgba(77, 25, 121, 0.12);
+	box-shadow: 0 12px 30px rgba(254, 181, 72, 0.18);
 	transform: translateY(-3px);
-	border-color: rgba(139, 92, 246, 0.25);
+	border-color: rgba(235, 142, 4, 0.3);
 }
 
 .pub-icon {
@@ -808,13 +808,13 @@ section {
 }
 
 .pub-badge-journal {
-	background: rgba(77, 25, 121, 0.1);
-	color: var(--primary-color);
+	background: rgba(254, 181, 72, 0.15);
+	color: var(--primary-dark);
 }
 
 .pub-badge-chapter {
-	background: rgba(139, 92, 246, 0.15);
-	color: #6d28d9;
+	background: rgba(0, 110, 144, 0.12);
+	color: var(--accent-color);
 }
 
 .pub-badge-public {
@@ -858,8 +858,8 @@ section {
 	padding: 35px 30px;
 	border-radius: 16px;
 	text-align: left;
-	box-shadow: 0 4px 15px rgba(77, 25, 121, 0.04);
-	border: 1px solid rgba(77, 25, 121, 0.08);
+	box-shadow: 0 4px 15px rgba(254, 181, 72, 0.06);
+	border: 1px solid rgba(254, 181, 72, 0.15);
 	transition: var(--transition);
 	display: flex;
 	flex-direction: column;
@@ -869,8 +869,8 @@ section {
 .community-item:hover,
 .community-card:hover {
 	transform: translateY(-6px);
-	box-shadow: 0 15px 35px rgba(77, 25, 121, 0.12);
-	border-color: rgba(139, 92, 246, 0.3);
+	box-shadow: 0 15px 35px rgba(254, 181, 72, 0.18);
+	border-color: rgba(235, 142, 4, 0.35);
 }
 
 .community-icon {
@@ -998,8 +998,8 @@ section {
 .form-group input:focus,
 .form-group textarea:focus {
 	outline: none;
-	border-color: var(--secondary-color);
-	box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.25);
+	border-color: var(--primary-color);
+	box-shadow: 0 0 0 3px rgba(254, 181, 72, 0.25);
 }
 
 .contact-form .btn {
@@ -1028,7 +1028,7 @@ section {
 
 /* ===== FOOTER ===== */
 .footer {
-	background: linear-gradient(135deg, var(--primary-dark) 0%, #1a052b 100%);
+	background: linear-gradient(135deg, #1a0d00 0%, var(--primary-dark) 100%);
 	border-top: 3px solid var(--accent-gold);
 	color: var(--white);
 	padding: 60px 20px 20px;
@@ -1123,7 +1123,7 @@ section {
 		top: 70px;
 		left: 0;
 		width: 100%;
-		background: var(--primary-color);
+		background: #1a0d00;
 		flex-direction: column;
 		gap: 0;
 		max-height: 0;
