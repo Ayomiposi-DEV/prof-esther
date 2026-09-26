@@ -3,6 +3,18 @@ document.addEventListener("DOMContentLoaded", function () {
 	const hamburger = document.querySelector(".hamburger");
 	const navMenu = document.querySelector(".nav-menu");
 	const navLinks = document.querySelectorAll(".nav-link");
+	const currentPage = window.location.pathname.split("/").pop() || "index.html";
+
+	navLinks.forEach((link) => {
+		const linkPage = new URL(link.href, window.location.href).pathname.split("/").pop();
+		const isCurrentPage = linkPage === currentPage;
+		link.classList.toggle("active", isCurrentPage);
+		if (isCurrentPage) {
+			link.setAttribute("aria-current", "page");
+		} else {
+			link.removeAttribute("aria-current");
+		}
+	});
 
 	// Toggle mobile menu
 	if (hamburger) {
