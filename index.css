@@ -170,7 +170,8 @@ h3,
 	background:
 		radial-gradient(circle at 85% 20%, rgba(39, 124, 122, 0.5) 0%, transparent 45%),
 		radial-gradient(circle at 10% 85%, rgba(210, 166, 74, 0.16) 0%, transparent 40%),
-		radial-gradient(circle at 50% 50%, rgba(52, 84, 119, 0.52) 0%, transparent 60%), linear-gradient(135deg, #14263d 0%, #203653 58%, #183b50 100%);
+		radial-gradient(circle at 50% 50%, rgba(52, 84, 119, 0.52) 0%, transparent 60%),
+		linear-gradient(135deg, #14263d 0%, #203653 58%, #183b50 100%);
 	color: var(--white);
 	padding: 90px 0 80px;
 	position: relative;
