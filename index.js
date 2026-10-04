@@ -1,5 +1,69 @@
 // ===== MOBILE NAVIGATION TOGGLE =====
+const upcomingEvents = [
+	{
+		title: "Rethinking Birthing Skill: Amplifying African Indigenous Birthing Epistemologies and Practices in Maternal Health Discourse",
+		description:
+			"A public lecture on reimagining maternal health through African Indigenous birthing knowledge, cultural practice, and transformative scholarship.",
+		date: "Friday, October 23, 2026",
+		time: "2:00 p.m.–4:00 p.m.",
+		location: "Barbara I. Dewey Meeting Room, W043 Pattee Library",
+		link: "https://pennstate.qualtrics.com/jfe/form/SV_cMeQNFeB11WCbXw",
+		image: "./images/gallery4.jpeg",
+	},
+];
+
 document.addEventListener("DOMContentLoaded", function () {
+	const eventsContainer = document.getElementById("upcoming-events");
+	if (eventsContainer) {
+		if (!Array.isArray(upcomingEvents) || upcomingEvents.length === 0) {
+			eventsContainer.style.display = "none";
+			eventsContainer.setAttribute("hidden", "true");
+			return;
+		}
+
+		const [event] = upcomingEvents;
+		eventsContainer.innerHTML = `
+			<div class="container">
+				<div class="section-header text-center mb-4">
+					<h2 class="display-6 fw-bold">Upcoming Events</h2>
+					<div class="underline"></div>
+				</div>
+
+				<div class="row justify-content-center">
+					<div class="col-lg-10">
+						<article class="event-feature-card">
+							<div class="row g-0 align-items-stretch">
+								<div class="col-md-5">
+									<img src="${event.image}" alt="Featured upcoming event image" />
+								</div>
+								<div class="col-md-7">
+									<div class="event-feature-body">
+										<span class="event-tag">Upcoming</span>
+										<h3>${event.title}</h3>
+										<p>${event.description}</p>
+										<div class="event-meta">
+											<span><i class="fas fa-calendar-alt text-warning"></i> ${event.date}</span>
+											<span><i class="fas fa-clock text-warning"></i> ${event.time}</span>
+											<span><i class="fas fa-location-dot text-warning"></i> ${event.location}</span>
+										</div>
+										<a
+											href="${event.link}"
+											target="_blank"
+											rel="noopener noreferrer"
+											class="btn btn-primary px-4 py-2"
+										>
+											RSVP / Register
+										</a>
+									</div>
+								</div>
+							</div>
+						</article>
+					</div>
+				</div>
+			</div>
+		`;
+	}
+
 	const hamburger = document.querySelector(".hamburger");
 	const navMenu = document.querySelector(".nav-menu");
 	const navLinks = document.querySelectorAll(".nav-link");
