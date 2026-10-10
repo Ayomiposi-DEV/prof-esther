@@ -1,526 +1,544 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dr. Esther Oluwashina Ajayi-Lowo | Academic & Research Hub</title>
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Bootstrap 5 CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    />
-    <link rel="stylesheet" href="./index.css" />
-    <style>
-      .hero-static-image-wrap {
-        position: relative;
-        overflow: hidden;
-        border-radius: 20px;
-        background: rgba(255, 255, 255, 0.04);
-      }
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Dr. Esther Oluwashina Ajayi-Lowo | Academic & Research Hub</title>
+		<!-- Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+			rel="stylesheet" />
+		<!-- Bootstrap 5 CSS -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+			crossorigin="anonymous" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+		<link rel="stylesheet" href="./index.css" />
+		<style>
+			.hero-static-image-wrap {
+				position: relative;
+				overflow: hidden;
+				border-radius: 20px;
+				background: rgba(255, 255, 255, 0.04);
+			}
 
-      .hero-static-image-wrap img {
-        width: 100%;
-        height: 100%;
-        max-height: 560px;
-        object-fit: cover;
-        object-position: center top;
-        display: block;
-        border-radius: 20px;
-      }
+			.hero-static-image-wrap img {
+				width: 100%;
+				height: 100%;
+				max-height: 560px;
+				object-fit: cover;
+				object-position: center top;
+				display: block;
+				border-radius: 20px;
+			}
 
-      .gallery-showcase {
-        padding-top: 2.5rem;
-        padding-bottom: 4rem;
-      }
+			.gallery-showcase {
+				padding-top: 2.5rem;
+				padding-bottom: 4rem;
+			}
 
-      .gallery-card {
-        position: relative;
-        overflow: hidden;
-        border-radius: 18px;
-        border: 1px solid rgba(255, 255, 255, 0.08);
-        background: rgba(255, 255, 255, 0.04);
-        box-shadow: 0 18px 35px rgba(15, 23, 42, 0.15);
-        transition:
-          transform 0.25s ease,
-          box-shadow 0.25s ease;
-        height: 100%;
-        margin: 0;
-      }
+			.gallery-card {
+				position: relative;
+				overflow: hidden;
+				border-radius: 18px;
+				border: 1px solid rgba(255, 255, 255, 0.08);
+				background: rgba(255, 255, 255, 0.04);
+				box-shadow: 0 18px 35px rgba(15, 23, 42, 0.15);
+				transition:
+					transform 0.25s ease,
+					box-shadow 0.25s ease;
+				height: 100%;
+				margin: 0;
+			}
 
-      .gallery-card:hover {
-        transform: translateY(-4px);
-        box-shadow: 0 22px 38px rgba(15, 23, 42, 0.2);
-      }
+			.gallery-card:hover {
+				transform: translateY(-4px);
+				box-shadow: 0 22px 38px rgba(15, 23, 42, 0.2);
+			}
 
-      .gallery-card img {
-        display: block;
-        width: 100%;
-        height: 260px;
-        object-fit: cover;
-        object-position: center;
-        transition: transform 0.35s ease;
-      }
+			.gallery-card img {
+				display: block;
+				width: 100%;
+				height: 260px;
+				object-fit: cover;
+				object-position: center;
+				transition: transform 0.35s ease;
+			}
 
-      .gallery-card:hover img {
-        transform: scale(1.04);
-      }
+			.gallery-card:hover img {
+				transform: scale(1.04);
+			}
 
-      .events-showcase {
-        padding-top: 2.25rem;
-        padding-bottom: 3rem;
-      }
+			.events-showcase {
+				padding-top: 2.25rem;
+				padding-bottom: 3rem;
+			}
 
-      .event-feature-card {
-        background: linear-gradient(135deg, #203653 0%, #18314a 100%);
-        border: 1px solid rgba(255, 255, 255, 0.12);
-        border-radius: 24px;
-        overflow: hidden;
-        box-shadow: 0 18px 36px rgba(15, 23, 42, 0.2);
-      }
+			.event-feature-card {
+				background: linear-gradient(135deg, #203653 0%, #18314a 100%);
+				border: 1px solid rgba(255, 255, 255, 0.12);
+				border-radius: 24px;
+				overflow: hidden;
+				box-shadow: 0 18px 36px rgba(15, 23, 42, 0.2);
+			}
 
-      .event-feature-card img {
-        display: block;
-        width: 100%;
-        height: 100%;
-        min-height: 300px;
-        object-fit: cover;
-        object-position: center;
-      }
+			.event-feature-card img {
+				display: block;
+				width: 100%;
+				height: 100%;
+				min-height: 300px;
+				object-fit: cover;
+				object-position: center;
+			}
 
-      .event-feature-body {
-        padding: 2rem;
-        background: transparent;
-      }
+			.event-feature-body {
+				padding: 2rem;
+				background: transparent;
+			}
 
-      .event-tag {
-        display: inline-block;
-        background: rgba(251, 191, 36, 0.15);
-        border: 1px solid rgba(251, 191, 36, 0.4);
-        color: #f7d77b;
-        font-size: 0.72rem;
-        font-weight: 700;
-        letter-spacing: 0.08em;
-        padding: 0.45rem 0.8rem;
-        border-radius: 999px;
-        text-transform: uppercase;
-        margin-bottom: 1rem;
-      }
+			.event-tag {
+				display: inline-block;
+				background: rgba(251, 191, 36, 0.15);
+				border: 1px solid rgba(251, 191, 36, 0.4);
+				color: #f7d77b;
+				font-size: 0.72rem;
+				font-weight: 700;
+				letter-spacing: 0.08em;
+				padding: 0.45rem 0.8rem;
+				border-radius: 999px;
+				text-transform: uppercase;
+				margin-bottom: 1rem;
+			}
 
-      .event-feature-body h3 {
-        color: #ffffff;
-        margin-bottom: 0.85rem;
-      }
+			.event-feature-body h3 {
+				color: #ffffff;
+				margin-bottom: 0.85rem;
+			}
 
-      .event-feature-body p {
-        color: rgba(255, 255, 255, 0.78);
-        margin-bottom: 1.25rem;
-      }
+			.event-feature-body p {
+				color: rgba(255, 255, 255, 0.78);
+				margin-bottom: 1.25rem;
+			}
 
-      .event-meta {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.75rem 1.25rem;
-        color: rgba(255, 255, 255, 0.9);
-        font-size: 0.92rem;
-        margin-bottom: 1.5rem;
-      }
+			.event-meta {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 0.75rem 1.25rem;
+				color: rgba(255, 255, 255, 0.9);
+				font-size: 0.92rem;
+				margin-bottom: 1.5rem;
+			}
 
-      .event-meta span {
-        display: inline-flex;
-        align-items: center;
-        gap: 0.45rem;
-      }
+			.event-meta span {
+				display: inline-flex;
+				align-items: center;
+				gap: 0.45rem;
+			}
 
-      .event-feature-body .btn-primary {
-        background-color: #d2a64a;
-        border-color: #d2a64a;
-        color: #14263d;
-        font-weight: 700;
-      }
+			.event-feature-body .btn-primary {
+				background-color: #d2a64a;
+				border-color: #d2a64a;
+				color: #14263d;
+				font-weight: 700;
+			}
 
-      .event-feature-body .btn-primary:hover {
-        background-color: #e0ba66;
-        border-color: #e0ba66;
-        color: #14263d;
-      }
+			.event-feature-body .btn-primary:hover {
+				background-color: #e0ba66;
+				border-color: #e0ba66;
+				color: #14263d;
+			}
 
-      @media (max-width: 767px) {
-        .hero-img {
-          height: 420px !important;
-        }
+			@media (max-width: 767px) {
+				.hero-img {
+					height: 420px !important;
+				}
 
-        .gallery-card img {
-          height: 200px;
-        }
+				.gallery-card img {
+					height: 200px;
+				}
 
-        .event-feature-body {
-          padding: 1.25rem;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <!-- Navigation -->
-    <nav class="my-navbar nav-bar">
-      <div class="nav-container">
-        <a href="index.html" class="logo">Dr. Esther O. Ajayi-Lowo</a>
-        <div class="nav-menu">
-          <a href="index.html" class="nav-link active" aria-current="page">Home</a>
-          <a href="research.html" class="nav-link">Research</a>
-          <a href="publications.html" class="nav-link">Publications</a>
-          <a href="community-engagement.html" class="nav-link">Community</a>
-          <a href="contact.html" class="nav-link">Contact</a>
-        </div>
-        <div class="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </div>
-    </nav>
+				.event-feature-body {
+					padding: 1.25rem;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<!-- Navigation -->
+		<nav class="my-navbar nav-bar">
+			<div class="nav-container">
+				<a href="index.html" class="logo">Dr. Esther O. Ajayi-Lowo</a>
+				<div class="nav-menu">
+					<a href="index.html" class="nav-link active" aria-current="page">Home</a>
+					<a href="research.html" class="nav-link">Research</a>
+					<a href="publications.html" class="nav-link">Publications</a>
+					<a href="community-engagement.html" class="nav-link">Community</a>
+					<a href="contact.html" class="nav-link">Contact</a>
+				</div>
+				<div class="hamburger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+		</nav>
 
-    <!-- Hero Section -->
-    <section class="hero-section position-relative overflow-hidden">
-      <div class="container py-lg-4">
-        <div class="row align-items-center g-5">
-          <!-- Left side: Scholar Profile & Mission -->
-          <div class="col-lg-7 text-start">
-            <!-- Eyebrow Pill Badge -->
-            <div
-              class="d-inline-flex align-items-center gap-2 px-3 py-2 rounded-pill hero-eyebrow mb-3"
-            >
-              <i class="fas fa-graduation-cap text-warning"></i>
-              <span>Assistant Professor • Texas Christian University</span>
-            </div>
+		<!-- Hero Section -->
+		<section class="hero-section position-relative overflow-hidden">
+			<div class="container py-lg-4">
+				<div class="row align-items-center g-5">
+					<!-- Left side: Scholar Profile & Mission -->
+					<div class="col-lg-7 text-start">
+						<!-- Eyebrow Pill Badge -->
+						<div class="d-inline-flex align-items-center gap-2 px-3 py-2 rounded-pill hero-eyebrow mb-3">
+							<i class="fas fa-graduation-cap text-warning"></i>
+							<span>Assistant Professor • Texas Christian University</span>
+						</div>
 
-            <!-- Headline (H1) & Academic Titles -->
-            <h1 class="hero-name text-white mb-2">
-              Dr. Esther Oluwashina Ajayi-Lowo<span class="gold-accent">.</span>
-            </h1>
-            <p class="hero-role mb-3">Global Scholar-Activist-Teacher Doula.</p>
-            <p class="hero-lead mb-4">
-              Pioneering research at the intersection of African Indigenous Birthing Epistemologies,
-              Transnational Feminism, Black Maternal Health, and Global Reproductive Justice.
-            </p>
+						<!-- Headline (H1) & Academic Titles -->
+						<h1 class="hero-name text-white mb-2">
+							Dr. Esther Oluwashina Ajayi-Lowo<span class="gold-accent">.</span>
+						</h1>
+						<p class="hero-role mb-3">Global Scholar-Activist-Teacher Doula.</p>
+						<p class="hero-lead mb-4">
+							Pioneering research at the intersection of African Indigenous Birthing Epistemologies,
+							Transnational Feminism, Black Maternal Health, and Global Reproductive Justice.
+						</p>
 
-            <!-- Bootstrap Buttons & CTAs -->
-            <div class="d-flex flex-wrap align-items-center gap-3 mb-4">
-              <a href="research.html" class="btn btn-primary px-4 py-3">
-                <i class="fas fa-flask me-2"></i>Explore Research
-              </a>
-              <a
-                href="https://drive.google.com/file/d/1KWQlZFyyQTVB3JsP_IVtESdTwYpEVcwn/view?usp=sharing"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="btn btn-outline-light px-4 py-3"
-              >
-                <i class="fas fa-file-lines me-2 text-warning"></i>Curriculum Vitae
-              </a>
-              <a
-                href="contact.html"
-                class="btn btn-link text-white text-decoration-none d-inline-flex align-items-center gap-2 px-2 py-3"
-              >
-                Get In Touch <i class="fas fa-arrow-right text-warning"></i>
-              </a>
-            </div>
+						<!-- Bootstrap Buttons & CTAs -->
+						<div class="d-flex flex-wrap align-items-center gap-3 mb-4">
+							<a href="research.html" class="btn btn-primary px-4 py-3">
+								<i class="fas fa-flask me-2"></i>Explore Research
+							</a>
+							<a
+								href="https://drive.google.com/file/d/1KWQlZFyyQTVB3JsP_IVtESdTwYpEVcwn/view?usp=sharing"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="btn btn-outline-light px-4 py-3">
+								<i class="fas fa-file-lines me-2 text-warning"></i>Curriculum Vitae
+							</a>
+							<a
+								href="contact.html"
+								class="btn btn-link text-white text-decoration-none d-inline-flex align-items-center gap-2 px-2 py-3">
+								Get In Touch <i class="fas fa-arrow-right text-warning"></i>
+							</a>
+						</div>
 
-            <!-- Credential & Trust Badges Strip -->
-            <div class="d-flex flex-wrap gap-2 pt-3 border-top border-white border-opacity-10">
-              <span class="hero-badge-item">
-                <i class="fas fa-university text-warning"></i> TCU Faculty, Department of Sociology
-                and Anthropology
-              </span>
-              <span class="hero-badge-item">
-                <i class="fas fa-award text-warning"></i> SSRC-IDRF, AAUW-IF, P.E.O-IPS
-              </span>
-              <span class="hero-badge-item">
-                <i class="fas fa-book-open text-warning"></i> Forthcoming:
-                <em>Decolonizing Childbirth</em>
-              </span>
-            </div>
-          </div>
+						<!-- Credential & Trust Badges Strip -->
+						<div class="d-flex flex-wrap gap-2 pt-3 border-top border-white border-opacity-10">
+							<span class="hero-badge-item">
+								<i class="fas fa-university text-warning"></i> TCU Faculty, Department of Sociology
+								and Anthropology
+							</span>
+							<span class="hero-badge-item">
+								<i class="fas fa-award text-warning"></i> SSRC-IDRF, AAUW-IF, P.E.O-IPS
+							</span>
+							<span class="hero-badge-item">
+								<i class="fas fa-book-open text-warning"></i> Forthcoming:
+								<em>Decolonizing Childbirth</em>
+							</span>
+						</div>
+					</div>
 
-          <!-- Right side: Framed Portrait Showcase -->
-          <div class="col-lg-5">
-            <div class="hero-image-card">
-              <!-- Top Floating Pill -->
-              <div class="hero-floating-badge-top">
-                <i class="fas fa-star me-1"></i> Scholar &amp; Doula
-              </div>
+					<!-- Right side: Framed Portrait Showcase -->
+					<div class="col-lg-5">
+						<div class="hero-image-card">
+							<!-- Top Floating Pill -->
+							<div class="hero-floating-badge-top">
+								<i class="fas fa-star me-1"></i> Scholar &amp; Doula
+							</div>
 
-              <div class="hero-static-image-wrap">
-                <img
-                  src="./images/hero-image-prof-esther.jpeg"
-                  class="hero-img"
-                  alt="Dr. Esther Oluwashina Ajayi-Lowo portrait"
-                />
-              </div>
+							<div class="hero-static-image-wrap">
+								<img
+									src="./images/hero-image-prof-esther.jpeg"
+									class="hero-img"
+									alt="Dr. Esther Oluwashina Ajayi-Lowo portrait" />
+							</div>
 
-              <!-- Bottom Floating Glass Badge -->
-              <div class="hero-floating-badge">
-                <div class="d-flex align-items-center gap-3">
-                  <div class="rounded-circle bg-danger bg-opacity-25 p-2 text-danger">
-                    <i class="fas fa-heart text-danger fs-5"></i>
-                  </div>
-                  <div>
-                    <small
-                      class="text-white-50 d-block lh-sm"
-                      style="font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.5px"
-                      >Global Advocacy</small
-                    >
-                    <strong class="text-white" style="font-size: 0.88rem"
-                      >Reproductive Justice</strong
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+							<!-- Bottom Floating Glass Badge -->
+							<div class="hero-floating-badge">
+								<div class="d-flex align-items-center gap-3">
+									<div class="rounded-circle bg-danger bg-opacity-25 p-2 text-danger">
+										<i class="fas fa-heart text-danger fs-5"></i>
+									</div>
+									<div>
+										<small
+											class="text-white-50 d-block lh-sm"
+											style="
+												font-size: 0.72rem;
+												text-transform: uppercase;
+												letter-spacing: 0.5px;
+											"
+											>Global Advocacy</small
+										>
+										<strong class="text-white" style="font-size: 0.88rem"
+											>Reproductive Justice</strong
+										>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-    <section id="upcoming-events" class="events-showcase" aria-live="polite"></section>
+		<section id="upcoming-events" class="events-showcase" aria-live="polite"></section>
 
-    <section class="gallery-showcase">
-      <div class="container">
-        <div class="section-header text-center mb-4">
-          <h2 class="display-6 fw-bold">Gallery</h2>
-          <div class="underline"></div>
-        </div>
+		<section class="gallery-showcase">
+			<div class="container">
+				<div class="section-header text-center mb-4">
+					<h2 class="display-6 fw-bold">Gallery</h2>
+					<div class="underline"></div>
+				</div>
 
-        <div class="row g-3 g-md-4 align-items-stretch">
-          <div class="col-6 col-md-4 col-lg-3">
-            <figure class="gallery-card">
-              <img src="./images/gallery1.jpeg" alt="Dr. Esther in community gathering" />
-            </figure>
-          </div>
-          <div class="col-6 col-md-4 col-lg-3">
-            <figure class="gallery-card">
-              <img src="./images/gallery2.jpeg" alt="Dr. Esther in academic environment" />
-            </figure>
-          </div>
-          <div class="col-6 col-md-4 col-lg-3">
-            <figure class="gallery-card">
-              <img src="./images/gallery3.jpeg" alt="Dr. Esther leading a conversation" />
-            </figure>
-          </div>
-          <div class="col-6 col-md-4 col-lg-3">
-            <figure class="gallery-card">
-              <img src="./images/gallery4.jpeg" alt="Dr. Esther in a speaking engagement" />
-            </figure>
-          </div>
-          <div class="col-6 col-md-4 col-lg-3">
-            <figure class="gallery-card">
-              <img src="./images/gallery5.jpeg" alt="Dr. Esther with community members" />
-            </figure>
-          </div>
-        </div>
-      </div>
-    </section>
+				<div class="row g-3 g-md-4 align-items-stretch">
+					<div class="col-6 col-md-4 col-lg-3">
+						<figure class="gallery-card">
+							<img src="./images/gallery1.jpeg" alt="Dr. Esther in community gathering" />
+						</figure>
+					</div>
+					<div class="col-6 col-md-4 col-lg-3">
+						<figure class="gallery-card">
+							<img src="./images/College-campus.jpeg" alt="Campus showcase" />
+						</figure>
+					</div>
 
-    <!-- About Section -->
-    <section class="about py-5">
-      <div class="container py-lg-4">
-        <div class="section-header text-center mb-5">
-          <h2 class="display-6 fw-bold">Education</h2>
-          <div class="underline"></div>
-        </div>
+					<div class="col-6 col-md-4 col-lg-3">
+						<figure class="gallery-card">
+							<img src="./images/gallery2.jpeg" alt="Dr. Esther in academic environment" />
+						</figure>
+					</div>
+					<div class="col-6 col-md-4 col-lg-3">
+						<figure class="gallery-card">
+							<img src="./images/gallery3.jpeg" alt="Dr. Esther leading a conversation" />
+						</figure>
+					</div>
+					<div class="col-6 col-md-4 col-lg-3">
+						<figure class="gallery-card">
+							<img src="./images/gallery4.jpeg" alt="Dr. Esther in a speaking engagement" />
+						</figure>
+					</div>
 
-        <!-- Education & Credentials Card -->
-        <div class="row mt-5">
-          <div class="col-12">
-            <div class="card border-0 rounded-4 shadow-sm p-4 p-lg-5 bg-white">
-              <div class="row align-items-center g-4">
-                <div class="col-lg-4">
-                  <span class="badge bg-warning text-dark px-3 py-2 rounded-pill fw-bold mb-2"
-                    >ACADEMIC FOUNDATION</span
-                  >
-                  <h3 class="h4 fw-bold text-primary mb-2">Education &amp; Diplomas</h3>
-                  <p class="text-muted small mb-0">
-                    Multidisciplinary training spanning multicultural gender studies, philosophy,
-                    international law, and United Nations systems.
-                  </p>
-                </div>
-                <div class="col-lg-8">
-                  <div class="row g-3">
-                    <div class="col-12 col-sm-6">
-                      <div class="p-3 rounded-3 bg-light border-start border-4 border-primary">
-                        <h6 class="fw-bold mb-1">Ph.D. &amp; M.A. in Multicultural WGS</h6>
-                        <p class="small text-muted mb-0">Texas Woman’s University, USA</p>
-                      </div>
-                    </div>
-                    <div class="col-12 col-sm-6">
-                      <div class="p-3 rounded-3 bg-light border-start border-4 border-warning">
-                        <h6 class="fw-bold mb-1">Masters of International Law & Diplomacy</h6>
-                        <p class="small text-muted mb-0">University of Lagos, Nigeria</p>
-                      </div>
-                    </div>
-                    <div class="col-12 col-sm-6">
-                      <div class="p-3 rounded-3 bg-light border-start border-4 border-warning">
-                        <h6 class="fw-bold mb-1">International Certificates</h6>
-                        <p class="small text-muted mb-0">United Nations University, Tokyo, Japan</p>
-                      </div>
-                    </div>
-                    <div class="col-12 col-sm-6">
-                      <div class="p-3 rounded-3 bg-light border-start border-4 border-primary">
-                        <h6 class="fw-bold mb-1">B.A., Philosophy (Summa Cum Laude)</h6>
-                        <p class="small text-muted mb-0">Obafemi Awolowo University, Nigeria</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Highlights Section -->
-    <section class="highlights py-5">
-      <div class="container py-lg-4">
-        <div class="section-header text-center mb-5">
-          ''
-          <h2 class="display-6 fw-bold">Impact &amp; Recognition</h2>
-          <div class="underline"></div>
-        </div>
-        <div class="row g-4">
-          <div class="col-6 col-lg-3">
-            <div class="stat-box h-100 d-flex flex-column justify-content-center p-4">
-              <div class="stat-number">14+</div>
-              <div class="stat-label">Publications &amp; Essays</div>
-            </div>
-          </div>
-          <div class="col-6 col-lg-3">
-            <div class="stat-box h-100 d-flex flex-column justify-content-center p-4">
-              <div class="stat-number">SSRC</div>
-              <div class="stat-label">&amp; AAUW Fellow</div>
-            </div>
-          </div>
-          <div class="col-6 col-lg-3">
-            <div class="stat-box h-100 d-flex flex-column justify-content-center p-4">
-              <div class="stat-number">Doula</div>
-              <div class="stat-label">Full-Spectrum Doula</div>
-            </div>
-          </div>
-          <div class="col-6 col-lg-3">
-            <div class="stat-box h-100 d-flex flex-column justify-content-center p-4">
-              <div class="stat-number">TCU</div>
-              <div class="stat-label">Scholar-Activist-Teacher</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+					<div class="col-6 col-md-4 col-lg-3">
+						<figure class="gallery-card">
+							<img src="./images/gallery5.jpeg" alt="Dr. Esther with community members" />
+						</figure>
+					</div>
+				</div>
+			</div>
+		</section>
 
-    <!-- Footer -->
-    <footer class="footer pt-5 pb-4">
-      <div class="container">
-        <div class="row g-4 pb-4">
-          <!-- Brand & Bio Summary -->
-          <div class="col-12 col-md-5 col-lg-4">
-            <h4 class="h5 fw-bold text-white mb-3">Dr. Esther O. Ajayi-Lowo</h4>
-            <p class="text-white-50 pe-lg-4">
-              Assistant Professor of Women and Gender Studies at Texas Christian University.
-              Scholar-activist advancing African Indigenous birthing epistemologies, healthcare
-              equity, and reproductive justice.
-            </p>
-          </div>
+		<!-- About Section -->
+		<section class="about py-5">
+			<div class="container py-lg-4">
+				<div class="section-header text-center mb-5">
+					<h2 class="display-6 fw-bold">Education</h2>
+					<div class="underline"></div>
+				</div>
 
-          <!-- Quick Links -->
-          <div class="col-6 col-md-3 col-lg-2">
-            <h5 class="h6 fw-bold text-white mb-3">Navigation</h5>
-            <ul class="list-unstyled mb-0">
-              <li class="mb-2">
-                <a href="index.html" class="text-white-50 text-decoration-none">Home</a>
-              </li>
-              <li class="mb-2">
-                <a href="research.html" class="text-white-50 text-decoration-none">Research</a>
-              </li>
-              <li class="mb-2">
-                <a href="publications.html" class="text-white-50 text-decoration-none"
-                  >Publications</a
-                >
-              </li>
-              <li class="mb-2">
-                <a href="community-engagement.html" class="text-white-50 text-decoration-none"
-                  >Community</a
-                >
-              </li>
-              <li class="mb-2">
-                <a href="contact.html" class="text-white-50 text-decoration-none">Contact</a>
-              </li>
-            </ul>
-          </div>
+				<!-- Education & Credentials Card -->
+				<div class="row mt-5">
+					<div class="col-12">
+						<div class="card border-0 rounded-4 shadow-sm p-4 p-lg-5 bg-white">
+							<div class="row align-items-center g-4">
+								<div class="col-lg-4">
+									<span class="badge bg-warning text-dark px-3 py-2 rounded-pill fw-bold mb-2"
+										>ACADEMIC FOUNDATION</span
+									>
+									<h3 class="h4 fw-bold text-primary mb-2">Education &amp; Diplomas</h3>
+									<p class="text-muted small mb-0">
+										Multidisciplinary training spanning multicultural gender studies,
+										philosophy, international law, and United Nations systems.
+									</p>
+								</div>
+								<div class="col-lg-8">
+									<div class="row g-3">
+										<div class="col-12 col-sm-6">
+											<div
+												class="p-3 rounded-3 bg-light border-start border-4 border-primary">
+												<h6 class="fw-bold mb-1">
+													Ph.D. &amp; M.A. in Multicultural WGS
+												</h6>
+												<p class="small text-muted mb-0">
+													Texas Woman’s University, USA
+												</p>
+											</div>
+										</div>
+										<div class="col-12 col-sm-6">
+											<div
+												class="p-3 rounded-3 bg-light border-start border-4 border-warning">
+												<h6 class="fw-bold mb-1">
+													Masters of International Law & Diplomacy
+												</h6>
+												<p class="small text-muted mb-0">
+													University of Lagos, Nigeria
+												</p>
+											</div>
+										</div>
+										<div class="col-12 col-sm-6">
+											<div
+												class="p-3 rounded-3 bg-light border-start border-4 border-warning">
+												<h6 class="fw-bold mb-1">
+													International Certificates
+												</h6>
+												<p class="small text-muted mb-0">
+													United Nations University, Tokyo, Japan
+												</p>
+											</div>
+										</div>
+										<div class="col-12 col-sm-6">
+											<div
+												class="p-3 rounded-3 bg-light border-start border-4 border-primary">
+												<h6 class="fw-bold mb-1">
+													B.A., Philosophy (Summa Cum Laude)
+												</h6>
+												<p class="small text-muted mb-0">
+													Obafemi Awolowo University, Nigeria
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Highlights Section -->
+		<section class="highlights py-5">
+			<div class="container py-lg-4">
+				<div class="section-header text-center mb-5">
+					''
+					<h2 class="display-6 fw-bold">Impact &amp; Recognition</h2>
+					<div class="underline"></div>
+				</div>
+				<div class="row g-4">
+					<div class="col-6 col-lg-3">
+						<div class="stat-box h-100 d-flex flex-column justify-content-center p-4">
+							<div class="stat-number">14+</div>
+							<div class="stat-label">Publications &amp; Essays</div>
+						</div>
+					</div>
+					<div class="col-6 col-lg-3">
+						<div class="stat-box h-100 d-flex flex-column justify-content-center p-4">
+							<div class="stat-number">SSRC</div>
+							<div class="stat-label">&amp; AAUW Fellow</div>
+						</div>
+					</div>
+					<div class="col-6 col-lg-3">
+						<div class="stat-box h-100 d-flex flex-column justify-content-center p-4">
+							<div class="stat-number">Doula</div>
+							<div class="stat-label">Full-Spectrum Doula</div>
+						</div>
+					</div>
+					<div class="col-6 col-lg-3">
+						<div class="stat-box h-100 d-flex flex-column justify-content-center p-4">
+							<div class="stat-number">TCU</div>
+							<div class="stat-label">Scholar-Activist-Teacher</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-          <!-- External Academic Resources & Guides -->
-          <div class="col-6 col-md-4 col-lg-3">
-            <h5 class="h6 fw-bold text-white mb-3">External Links</h5>
-            <!-- =================================================================
+		<!-- Footer -->
+		<footer class="footer pt-5 pb-4">
+			<div class="container">
+				<div class="row g-4 pb-4">
+					<!-- Brand & Bio Summary -->
+					<div class="col-12 col-md-5 col-lg-4">
+						<h4 class="h5 fw-bold text-white mb-3">Dr. Esther O. Ajayi-Lowo</h4>
+						<p class="text-white-50 pe-lg-4">
+							Assistant Professor of Women and Gender Studies at Texas Christian University.
+							Scholar-activist advancing African Indigenous birthing epistemologies, healthcare equity, and
+							reproductive justice.
+						</p>
+					</div>
+
+					<!-- Quick Links -->
+					<div class="col-6 col-md-3 col-lg-2">
+						<h5 class="h6 fw-bold text-white mb-3">Navigation</h5>
+						<ul class="list-unstyled mb-0">
+							<li class="mb-2">
+								<a href="index.html" class="text-white-50 text-decoration-none">Home</a>
+							</li>
+							<li class="mb-2">
+								<a href="research.html" class="text-white-50 text-decoration-none">Research</a>
+							</li>
+							<li class="mb-2">
+								<a href="publications.html" class="text-white-50 text-decoration-none"
+									>Publications</a
+								>
+							</li>
+							<li class="mb-2">
+								<a href="community-engagement.html" class="text-white-50 text-decoration-none"
+									>Community</a
+								>
+							</li>
+							<li class="mb-2">
+								<a href="contact.html" class="text-white-50 text-decoration-none">Contact</a>
+							</li>
+						</ul>
+					</div>
+
+					<!-- External Academic Resources & Guides -->
+					<div class="col-6 col-md-4 col-lg-3">
+						<h5 class="h6 fw-bold text-white mb-3">External Links</h5>
+						<!-- =================================================================
 						     GUIDE: EXTERNAL ACADEMIC LINKS
 						     Update or add links to institutional directories, syllabi, or profiles below.
 						     Example: <a href="https://your-url.com" target="_blank" rel="noopener noreferrer">...</a>
 						================================================================== -->
-            <ul class="list-unstyled mb-0">
-              <li class="mb-2">
-                <a
-                  href="https://docs.google.com/document/d/1X0JhwEbv8cHkb0I58TmnPBc52tW5GTsY/edit?usp=sharing&ouid=112978066714034917840&rtpof=true&sd=true"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="text-white-50 text-decoration-none"
-                >
-                  <i class="fas fa-file-text text-warning me-2"></i>Curriculum Vitae
-                </a>
-              </li>
-              <li class="mb-2">
-                <a
-                  href="https://twu-ir.tdl.org/handle/11274/12696"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="text-white-50 text-decoration-none"
-                >
-                  <i class="fas fa-university text-warning me-2"></i>TWU Repository
-                </a>
-              </li>
-              <li class="mb-2">
-                <a
-                  href="https://medium.com/@estarjayi"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="text-white-50 text-decoration-none"
-                >
-                  <i class="fab fa-medium text-warning me-2"></i>Medium Articles
-                </a>
-              </li>
-              <li class="mb-2">
-                <a href="mailto:e.ajayi-lowo@tcu.edu" class="text-white-50 text-decoration-none">
-                  <i class="fas fa-envelope text-warning me-2"></i>e.ajayi-lowo@tcu.edu
-                </a>
-              </li>
-            </ul>
-          </div>
+						<ul class="list-unstyled mb-0">
+							<li class="mb-2">
+								<a
+									href="https://docs.google.com/document/d/1X0JhwEbv8cHkb0I58TmnPBc52tW5GTsY/edit?usp=sharing&ouid=112978066714034917840&rtpof=true&sd=true"
+									target="_blank"
+									rel="noopener noreferrer"
+									class="text-white-50 text-decoration-none">
+									<i class="fas fa-file-text text-warning me-2"></i>Curriculum Vitae
+								</a>
+							</li>
+							<li class="mb-2">
+								<a
+									href="https://twu-ir.tdl.org/handle/11274/12696"
+									target="_blank"
+									rel="noopener noreferrer"
+									class="text-white-50 text-decoration-none">
+									<i class="fas fa-university text-warning me-2"></i>TWU Repository
+								</a>
+							</li>
+							<li class="mb-2">
+								<a
+									href="https://medium.com/@estarjayi"
+									target="_blank"
+									rel="noopener noreferrer"
+									class="text-white-50 text-decoration-none">
+									<i class="fab fa-medium text-warning me-2"></i>Medium Articles
+								</a>
+							</li>
+							<li class="mb-2">
+								<a href="mailto:e.ajayi-lowo@tcu.edu" class="text-white-50 text-decoration-none">
+									<i class="fas fa-envelope text-warning me-2"></i>e.ajayi-lowo@tcu.edu
+								</a>
+							</li>
+						</ul>
+					</div>
 
-          <!-- Social Links & Profiles -->
-          <div class="col-12 col-md-6 col-lg-3">
-            <h5 class="h6 fw-bold text-white mb-3">Connect &amp; Follow</h5>
-            <p class="text-white-50 small mb-3">
-              Stay updated with research publications, talks, and birthwork advocacy.
-            </p>
+					<!-- Social Links & Profiles -->
+					<div class="col-12 col-md-6 col-lg-3">
+						<h5 class="h6 fw-bold text-white mb-3">Connect &amp; Follow</h5>
+						<p class="text-white-50 small mb-3">
+							Stay updated with research publications, talks, and birthwork advocacy.
+						</p>
 
-            <!-- =================================================================
+						<!-- =================================================================
 						     GUIDE: SOCIAL MEDIA & PROFILE LINKS
 						     To configure your social profiles, replace the '#' placeholders with your URLs:
 						     - LinkedIn: Connected to Dr. Esther's verified profile
@@ -528,63 +546,57 @@
 						     - Google Scholar: Replace '#' with e.g. "https://scholar.google.com/citations?user=..."
 						     - YouTube: Replace '#' with e.g. "https://youtube.com/@yourchannel"
 						================================================================== -->
-            <div class="social-links d-flex gap-2">
-              <a
-                href="https://www.linkedin.com/in/esther-shina-ajayi-lowo-phd"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="LinkedIn Profile"
-                title="LinkedIn Profile"
-                ><i class="fab fa-linkedin"></i
-              ></a>
-              <a
-                href="https://www.facebook.com/esther.ajayilowo"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Facebook Profile"
-                title="Facebook Profile"
-                ><i class="fab fa-facebook"></i
-              ></a>
-              <a
-                href="https://www.instagram.com/estarjayi/"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Instagram Profile"
-                title="Instagram Profile"
-                ><i class="fab fa-instagram"></i
-              ></a>
-              <a
-                href="https://x.com/ajayilowo"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="X Profile"
-                title="X Profile"
-                ><i class="fab fa-x-twitter"></i
-              ></a>
-            </div>
-          </div>
-        </div>
+						<div class="social-links d-flex gap-2">
+							<a
+								href="https://www.linkedin.com/in/esther-shina-ajayi-lowo-phd"
+								target="_blank"
+								rel="noopener noreferrer"
+								aria-label="LinkedIn Profile"
+								title="LinkedIn Profile"
+								><i class="fab fa-linkedin"></i
+							></a>
+							<a
+								href="https://www.facebook.com/esther.ajayilowo"
+								target="_blank"
+								rel="noopener noreferrer"
+								aria-label="Facebook Profile"
+								title="Facebook Profile"
+								><i class="fab fa-facebook"></i
+							></a>
+							<a
+								href="https://www.instagram.com/estarjayi/"
+								target="_blank"
+								rel="noopener noreferrer"
+								aria-label="Instagram Profile"
+								title="Instagram Profile"
+								><i class="fab fa-instagram"></i
+							></a>
+							<a
+								href="https://x.com/ajayilowo"
+								target="_blank"
+								rel="noopener noreferrer"
+								aria-label="X Profile"
+								title="X Profile"
+								><i class="fab fa-x-twitter"></i
+							></a>
+						</div>
+					</div>
+				</div>
 
-        <div
-          class="footer-bottom border-top border-white border-opacity-10 pt-3 mt-3 text-center text-white-50 small"
-        >
-          <p class="mb-0">
-            &copy; 2026 Dr. Esther Oluwashina Ajayi-Lowo, PhD. All rights reserved.
-          </p>
-        </div>
-      </div>
-    </footer>
+				<div class="footer-bottom border-top border-white border-opacity-10 pt-3 mt-3 text-center text-white-50 small">
+					<p class="mb-0">&copy; 2026 Dr. Esther Oluwashina Ajayi-Lowo, PhD. All rights reserved.</p>
+				</div>
+			</div>
+		</footer>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
-      integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
-      crossorigin="anonymous"
-    ></script>
-    <script src="./index.js"></script>
-  </body>
+		<script
+			src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+			integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+			crossorigin="anonymous"></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+			integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+			crossorigin="anonymous"></script>
+		<script src="./index.js"></script>
+	</body>
 </html>
