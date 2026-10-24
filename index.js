@@ -1,15 +1,15 @@
 // ===== MOBILE NAVIGATION TOGGLE =====
 const upcomingEvents = [
-	{
-		title: "Rethinking Birthing Skill: Amplifying African Indigenous Birthing Epistemologies and Practices in Maternal Health Discourse",
-		description:
-			"A public lecture on reimagining maternal health through African Indigenous birthing knowledge, cultural practice, and transformative scholarship.",
-		date: "Friday, October 23, 2026",
-		time: "2:00 p.m.–4:00 p.m.",
-		location: "Barbara I. Dewey Meeting Room, W043 Pattee Library",
-		link: "https://pennstate.qualtrics.com/jfe/form/SV_cMeQNFeB11WCbXw",
-		image: "./images/gallery4.jpeg",
-	},
+	// {
+	// 	title: "Rethinking Birthing Skill: Amplifying African Indigenous Birthing Epistemologies and Practices in Maternal Health Discourse",
+	// 	description:
+	// 		"A public lecture on reimagining maternal health through African Indigenous birthing knowledge, cultural practice, and transformative scholarship.",
+	// 	date: "Friday, October 23, 2026",
+	// 	time: "2:00 p.m.–4:00 p.m.",
+	// 	location: "Barbara I. Dewey Meeting Room, W043 Pattee Library",
+	// 	link: "https://pennstate.qualtrics.com/jfe/form/SV_cMeQNFeB11WCbXw",
+	// 	image: "./images/gallery4.jpeg",
+	// },
 ];
 
 document.addEventListener("DOMContentLoaded", function () {
